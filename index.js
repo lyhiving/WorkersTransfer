@@ -8,7 +8,7 @@ async function handleRequest(request) {
         return fetch(form['url'])
     }
     if (request.method == "GET") {
-        const response = await fetch("https://github.com/52fancy/WorkersTransfer/raw/main/index.html")
+        const response = await fetch("https://github.com/lyhiving/WorkersTransfer/raw/main/index.html")
         const html = await response.text()
         return new Response(html, { headers: { "content-type": "text/html;charset=UTF-8" } })
     }
